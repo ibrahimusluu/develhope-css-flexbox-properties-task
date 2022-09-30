@@ -10,9 +10,12 @@ body {
 
 section.grid {
     text-indent: 15px;
-    display: grid;
-    gap: 1rem;
-    grid-template-areas: "yell redd greenn orangee orangee bluee";
+    display: flex;
+    justify-content: space-between;
+}
+
+section div:not(section.numbers), section div:not(section.letters) {
+    width: 330px;
 }
 
 section.numbers {
@@ -20,7 +23,6 @@ section.numbers {
     text-align: center;
     display: grid;
     gap: 1rem;
-    grid-template-areas: "one" "two" "three" "four";
     justify-content: center;
 }
 
@@ -29,48 +31,41 @@ section.letters {
     text-align: center;
     display: grid;
     gap: 1rem;
-    grid-template-areas: "a" "b" "c" "d";
     justify-content: center;
 }
 
 #green {
-    grid-area: greenn;
     background-color: lightgreen;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
 }
 
 #yellow {
-    grid-area: yell;
     background-color: lightyellow;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
 }
 
 #red {
-    grid-area: redd;
     background-color: lightcoral;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
 }
 
 #blue {
-    grid-area: bluee;
     background-color: lightblue;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
 }
 
 #orange {
-    grid-area: orangee;
+    width: 550px;
     background-color: lightsalmon;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
-    /* width: 500px; */
 }
 
 #one {
-    grid-area: one;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -78,7 +73,6 @@ section.letters {
 }
 
 #two {
-    grid-area: two;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -86,7 +80,6 @@ section.letters {
 }
 
 #three {
-    grid-area: three;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -94,7 +87,6 @@ section.letters {
 }
 
 #four {
-    grid-area: four;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -102,7 +94,6 @@ section.letters {
 }
 
 #a {
-    grid-area: a;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -110,7 +101,6 @@ section.letters {
 }
 
 #b {
-    grid-area: b;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -118,7 +108,6 @@ section.letters {
 }
 
 #c {
-    grid-area: c;
     background-color: white;
     height: 50px;
     width: 80px;
@@ -126,7 +115,6 @@ section.letters {
 }
 
 #d {
-    grid-area: d;
     background-color: white;
     height: 50px;
     width: 80px;
